@@ -2,6 +2,11 @@
 
 
 header { width: 980px; margin: 0 auto;}
+@media only screen and (max-device-width : 480px) {
+  	#logo { 
+ 		  width:100%;
+  	}
+  }
 
 /* ------------- スクロールフェードインDown用 ------------- */
 .fadeInDown {
@@ -28,6 +33,16 @@ header { width: 980px; margin: 0 auto;}
     float: left;
     margin: 5px 0 0;
 }
+html{
+    font-size: 62.5%;
+    line-height: normal;
+    height: 100%;
+}
+body{
+    font-size:1.6rem;/* 16px*/
+    line-height: 2;
+    height: 1500px;
+}
 
 #header_contact {
     float: right;
@@ -44,6 +59,7 @@ a:hover {
     text-decoration: none;
 }
 a:hover img { opacity: 0.7;}
+.lead {font-size: 16px;}
 #global_navi {
     width: 980px;
     height: 80px;
@@ -72,13 +88,15 @@ a:hover img { opacity: 0.7;}
 }
 body {
     background-color: burlywood;
+    font-size: 16px;
 }
 #wrapper {
     width: 980px;
-    height: 500px;
+    height: auto;
     margin: 0 auto;
     overflow: hidden;
     color: peru;
+　　font-size: 16px;
 }
 #entry dl {
     background: #f1ede4 ;
@@ -102,35 +120,44 @@ body {
 }
 #breadcrumb ol li:last-child::after { content: none;}
 #main {
-    width: 600px;
-    height: 390px;
+    width: 550px;
+    height: 100%;
     float: left;
     background-color: #413328;
     margin-bottom: 10px;
     padding: 10px;
     line-height: 20px;
+    font-size: 25px;
 }
-#in2 {
+li.lead {
+    font-size: 25px;
+    line-height: normal;
+}
+#h2 {
     line-height: 21px;
 }
 #sidebar {
-    width: 350px;
-    height: 250px;
+    width: 400px;
+    height: auto;
     float: right;
+   font-size: 20px;
 }
 #side_banner h2 {
     background-color: #716961;
     color: #fff;
     padding: 7px;
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
 }
 #side_cintact ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    font-size: 20px;
 }
-#side_cintact ul li {margin-bottom: 10px;}
+#side_cintact ul li {
+margin-bottom: 10px;
+font-size: 20px;}
 #side_contact {
     border: 1px solid #b7a077;
     color: #7f7259;
@@ -142,7 +169,7 @@ body {
     background-color: #b7a077;
     color: rgb(77, 60, 7);
     padding: 3px;
-    font-size: 14px;
+    font-size: 20px;
     : ;
 }
 #side_contact address {
@@ -174,6 +201,19 @@ body {
 }
 article {
     padding: 3px;
+    fozt-size: 20px;
+    line-height: normal;
+}
+input#submit_button {
+    background-color: #b7a077;
+    border: 5px solid #b7a077;
+    padding: 5px 30px;
+    border-radius: 7px;
+    font-size: 23px;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: margin-light 2s, color 1s  cubic-bezier(0.79, 0.29, 0.2, 0.88);
 }
 footer {
     background-color: #352b23;
